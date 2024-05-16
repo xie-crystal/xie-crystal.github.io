@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>History of the Web</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  
+  <link rel="shortcut icon" type="image/x-icon" href="images/history.ico" />
+  <style>
+    .oval-image {
+		width: 200px;
+		height: 200px;
+		border-radius: 50%;
+		object-fit: cover;
+    }
+	.nav-icon {
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		object-fit: cover;
+		margin-right: 10px;
+	}
+	.margin-topped {
+		margin-top: 2%;
+	}
+	label {
+		float: left;
+	}
+	#subbing {
+		margin-right: -5px;
+	}
+	#email {
+		width: 200px;
+	}
+	.socials {
+		color: #82d7ff;
+	}
+	.socials:hover {
+		color: #99f5ff;
+	}
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+		<img src="C:\Users\xie10\source\vscode\School\ibcshl\html\bootstrap2\images\history.png" alt="History of the Web" class="nav-icon">
+      <a class="navbar-brand" href="#"> Web Topics</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">History</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="search-engines.html">Search Engines</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="web-graphs.html">Web Structures</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Jumbotron -->
+  <div class="jumbotron text-center margin-topped">
+    <h1 class="display-4">The History of the Web</h1>
+    <p class="lead">The evolution and future direction of the web.</p>
+  </div>
+
+  <div class="container mt-4">
+    <!-- Image in Oval Shape -->
+    <div class="text-center">
+      <img src="C:\Users\xie10\source\vscode\School\ibcshl\html\bootstrap2\images\cryodragon.jpg" alt="History of the Web" class="oval-image">
+    </div>
+
+    <!-- Table -->
+    <h2 class="mt-4">Key Milestones</h2>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Year</th>
+          <th>Event</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1989</td>
+          <td>Tim Berners-Lee proposes the World Wide Web.</td>
+        </tr>
+        <tr>
+          <td>1991</td>
+          <td>First website goes live.</td>
+        </tr>
+        <tr>
+          <td>2004</td>
+          <td>Web 2.0 becomes popular.</td>
+        </tr>
+        <tr>
+          <td>2020</td>
+          <td>Web 3.0 and the rise of decentralized web. (Still in development.)</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <!-- Icon -->
+    <div class="mt-4">
+		<i class="bi bi-globe" style="font-size: 2rem; color: blue;"></i>
+    </div>
+
+    <!-- Reference/Bibliography/Citations
+    <div class="mt-4">
+      <h2>References</h2>
+      <ul>
+        <li>Berners-Lee, Tim. "Information Management: A Proposal." CERN, 1989.</li>
+        <li>O'Reilly, Tim. "What Is Web 2.0." O'Reilly Network, 2005.</li>
+      </ul>
+    </div>
+	</div> -->
+	<div class="mt-4">
+		<h2>References</h2>
+		<ul>
+			<li>Kostas, Dimitriou and Hatzitaskos, Markos. "Computer Science for IB." Express Publishing, 2015.</li>
+		</ul>
+		</div>
+	</div>
+	
+	<div class="mt-5 p-4 bg-dark text-white text-center">
+		<!-- Button and Input Form -->
+		<div class="container text-left">
+		<div class="row">
+			<div class="col-2">
+				<p>&copy 2024 Crystal Xie</p>
+				<a href="https://github.com/xie-crystal" role="button" target="_blank" class="socials"><i class="fab fa-github"></i></a>
+				<a href="https://discord.com/ixewolf" role="button" target="_blank" class="socials"><i class="fab fa-discord"></i></a>
+			</div>
+			<div class="col-4">
+			</div>
+			
+			<div class="col">
+			<form>
+				<div class="row">
+					<label for="email" class="form-label">Subscribe to our newsletter</label>
+				</div>
+				<div class="row">
+					<div class="col">
+						<input type="email" class="form-control subscribe" id="email" placeholder="Email">
+						<button type="submit" class="btn btn-primary" onclick="show_alert()">Subscribe</button>
+					</div>
+				
+					<div class="col-sm text-left">
+						<div class="form-check">
+							<label class="radio-inline">
+								<input type="checkbox" class="form-check-input" id="subbing">Receive notifications for new blog posts
+							</label>
+							<label class="radio-inline">
+								<input type="checkbox" class="form-check-input" id="subbing">Receive marketing information
+							</label>
+						</div>
+					</div>
+					
+					<script>
+						function show_alert() {
+							alert("Thank you for subscribing!");
+						}
+					</script>
+				</div>
+			</form>
+			</div>
+		</div>
+		</div>
+	</div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/7aa7bef591.js" crossorigin="anonymous"></script> <!-- xiecrystal33@gmail.com on fontawesome.com-->
+</body>
+</html>
