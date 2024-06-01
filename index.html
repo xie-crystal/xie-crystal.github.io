@@ -28,17 +28,27 @@
 	label {
 		float: left;
 	}
-	#subbing {
-		margin-right: -5px;
+	.subbing, #email, #sub-button {
+		font-size: 13px;
+		text-wrap: nowrap;
 	}
 	#email {
 		width: 200px;
+		margin-bottom: 10px;
 	}
 	.socials {
 		color: #82d7ff;
 	}
 	.socials:hover {
 		color: #99f5ff;
+	}
+	#sub-button {
+		color: black;
+		background-color: #82d7ff;
+		border: 0;
+	}
+	#sub-button:hover {
+		background-color: #99f5ff;
 	}
   </style>
 </head>
@@ -132,35 +142,28 @@
 		</div>
 	</div>
 	
-	<div class="mt-5 p-4 bg-dark text-white text-center">
+	<div class="mt-5 p-4 bg-dark text-white text-center" id="footer">
 		<!-- Button and Input Form -->
 		<div class="container text-left">
-		<div class="row">
-			<div class="col-2">
-				<p>&copy 2024 Crystal Xie</p>
-				<a href="https://github.com/xie-crystal" role="button" target="_blank" class="socials"><i class="fab fa-github"></i></a>
-				<a href="https://discord.com/ixewolf" role="button" target="_blank" class="socials"><i class="fab fa-discord"></i></a>
-			</div>
-			<div class="col-4">
-			</div>
-			
+		<div class="row">			
 			<div class="col">
 			<form>
-				<div class="row">
-					<div class="col">
+				<div class="row justify-content-start">
+					<div class="col-4 text-left">
 						<input type="email" class="form-control subscribe" id="email" placeholder="Email">
-						<button type="submit" class="btn btn-primary" onclick="show_alert()">Subscribe</button>
-					</div>
-				
-					<div class="col-sm text-left">
+						
 						<div class="form-check">
-							<label class="radio-inline">
-								<input type="checkbox" class="form-check-input" id="subbing">Receive notifications for new blog posts
+							<label class="radio-inline subbing">
+								<input type="checkbox" class="form-check-input">Receive blog post notifications
 							</label>
-							<label class="radio-inline">
-								<input type="checkbox" class="form-check-input" id="subbing">Receive marketing information
+							<label class="radio-inline subbing">
+								<input type="checkbox" class="form-check-input">Receive marketing information
 							</label>
 						</div>
+					</div>
+					
+					<div class="col-2">
+						<button type="submit" class="btn btn-primary" onclick="show_alert()" id="sub-button">Subscribe</button>
 					</div>
 					
 					<script>
@@ -170,6 +173,14 @@
 					</script>
 				</div>
 			</form>
+			</div>
+			
+			<div class="col-4">
+			</div>
+			<div class="col-2">
+				<p>&copy 2024 Crystal Xie</p>
+				<a href="https://github.com/xie-crystal" role="button" target="_blank" class="socials"><i class="fab fa-github"></i></a>
+				<a href="https://discord.com/ixewolf" role="button" target="_blank" class="socials"><i class="fab fa-discord"></i></a>
 			</div>
 		</div>
 		</div>
